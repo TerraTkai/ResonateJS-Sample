@@ -1,0 +1,29 @@
+﻿tasks-section {
+    display: block;
+    float: left;
+    width: 100%;
+    padding-bottom:25px;
+    height:100%;
+}
+
+tasks-section > div:nth-child(1) {
+    background-color: #75B9BE;
+    width: 100%;
+    padding: 5px 12px 5px 12px;
+    font-size: 0.9rem;
+    color:#FFFFFF;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+tasks-section > div:nth-child(2) {
+    border: solid 1px #75B9BE;
+    width: 100%;
+    padding: 12px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 0.9rem;
+    height:100%;
+    margin-top:-22px;
+    padding-top:32px;
+}

@@ -1,0 +1,12 @@
+﻿notfound > div {
+    min-height:400px;
+}
+
+notfound > div {
+    text-align: center;
+    font-size: 32px;
+}
+
+notfound > div > span:nth-child(1) {
+    font-size:120px;
+}

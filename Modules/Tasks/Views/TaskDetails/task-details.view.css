@@ -1,0 +1,53 @@
+﻿task-details label {
+    width: 100%;
+    margin-bottom: 2px;
+    background-color: #F8F8F8;
+    padding: 3px 0px 4px 8px;
+    font-size: 0.85rem;
+}
+
+.task-info span {
+    display: inline-block;
+    padding: 5px 0px 15px 15px;
+    font-size: 0.85rem;
+}
+
+task-details textarea, task-details input {
+    border-radius: 3px;
+    border: solid 1px #DDDDDD;
+    box-shadow: none;
+    outline: none;
+    font-size: 0.85rem;
+}
+
+task-details textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding:10px;
+}
+
+task-details input {
+    text-align:center;
+}
+
+.task-buttons {
+    height: 30px;
+    padding-top: 15px;
+}
+
+task-details textarea:disabled, task-details input:disabled {
+    background-color:#FCFCFC;
+    color:#AAAAAA;
+}
+
+.validated-field {
+    opacity: 0;
+    color: #D9594C;
+    padding-right:15px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.required-field {
+    opacity: 1;
+}

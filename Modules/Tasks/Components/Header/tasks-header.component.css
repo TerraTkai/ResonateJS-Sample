@@ -1,0 +1,7 @@
+﻿tasks-header .text-white {
+    font-size:1.3rem;
+}
+
+tasks-header > header {
+    background-color: #4F5D75 !important;
+}

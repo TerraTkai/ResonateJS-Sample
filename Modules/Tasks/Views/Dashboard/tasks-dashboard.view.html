@@ -1,0 +1,67 @@
+﻿<tasks-dashboard>
+
+    <tasks-header header="dashboard-header"></tasks-header>
+
+    <div class="container pt-3">
+        <div class="row">
+            <div class="col-lg-12">
+                <tasks-section class="next-task-section" section-header="next-task-header" localize-help="next-task-help">
+                    <div>
+                        {nextTask ? @formatDateTime(nextTask.due) : ''}
+                    </div>
+                    <div>
+                        {nextTask ? nextTask.description : ''}
+                    </div>
+                </tasks-section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <tasks-section section-header="task-list-header" localize-help="task-list-help">
+                    <div>
+                        <button class="float-right mb-2 btn btn-tasks" localize="add-task-button" onclick="{@changeRoute('/demo/tasks/details')}"></button>
+                    </div>
+                    <div>
+                        <table>
+                            <tbody>
+                                <tr foreach="{task in tasks}" onclick="{@changeRoute('/demo/tasks/details/' + task.id)}">
+                                    <td onclick="{deleteTask(task, event)}"></td>
+                                    <td>{@formatDateTime(task.due)}</td>
+                                    <td>
+                                        <div>
+                                            {task.description}
+                                        </div>
+                                    </td>
+                                    <td>{@getStatus(task.statusId)}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </tasks-section>
+            </div>
+            <div class="col-md-4">
+                <tasks-section section-header="task-statistics-header" localize-help="task-statistics-help">
+                    <ul>
+                        <li>
+                            <label localize="stats-total"></label>
+                            <span>{tasks.length}</span>
+                        </li>
+                        <li>
+                            <label localize="stats-pending"></label>
+                            <span>{statistics.pending}</span>
+                        </li>
+                        <li>
+                            <label localize="stats-overdue"></label>
+                            <span>{statistics.overdue}</span>
+                        </li>
+                        <li>
+                            <label localize="stats-complete"></label>
+                            <span>{statistics.complete}</span>
+                        </li>
+                    </ul>
+                </tasks-section>
+            </div>
+        </div>
+    </div>
+
+</tasks-dashboard>

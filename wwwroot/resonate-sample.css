@@ -1,0 +1,138 @@
+﻿.bg-primary {
+    background-color: #9FD356 !important;
+}
+
+.btn-primary {
+    background-color: #3C91E6 !important;
+    border-radius: 2px;
+    padding: 1px 10px 3px 10px;
+    font-size: 0.95em;
+    box-shadow: none !important;
+    outline: none;
+}
+
+.btn-primary:hover {
+    background-color: #FF5C26 !important;
+    border-color: #FF7C46 !important;
+}
+
+a {
+    color: #3C91E6;
+    box-shadow: none !important;
+    cursor: pointer !important;
+}
+
+a:hover {
+    color: #FF5C26;
+    text-decoration: none;
+}
+
+a:not([href]) {
+    color: #FFFFFF !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.clickable:not([href]) {
+    color: #3C91E6 !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.clickable:hover {
+    color: #FF5C26 !important;
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 0.9em;
+}
+
+.link-light {
+    color: #EEEEEE;
+}
+
+    .link-light:hover {
+        color: #FFFFFF;
+    }
+
+h2 {
+    font-size: 1.8em;
+    color: #555555;
+}
+
+h4 {
+    font-size: 1.4em;
+    color: #555555;
+}
+
+h5 {
+    font-size: 1.2em;
+    color: #555555;
+}
+
+h6 {
+    font-size: 1em;
+    color: #555555;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.card-footer .btn {
+    float: right;
+    margin-left: 10px;
+}
+
+.title-prefix {
+    color: #BBBBBB;
+}
+
+view {
+    display: block;
+    position: relative;
+}
+
+view > * {
+    min-height: 100%;
+}
+
+.help {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 5px;
+    right: 7px;
+    z-index: 2;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFFFFF' d='M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1.25 17c0 .69-.559 1.25-1.25 1.25-.689 0-1.25-.56-1.25-1.25s.561-1.25 1.25-1.25c.691 0 1.25.56 1.25 1.25zm1.393-9.998c-.608-.616-1.515-.955-2.551-.955-2.18 0-3.59 1.55-3.59 3.95h2.011c0-1.486.829-2.013 1.538-2.013.634 0 1.307.421 1.364 1.226.062.847-.39 1.277-.962 1.821-1.412 1.343-1.438 1.993-1.432 3.468h2.005c-.013-.664.03-1.203.935-2.178.677-.73 1.519-1.638 1.536-3.022.011-.924-.284-1.719-.854-2.297z'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;
+    background-position:center center;
+    cursor:help;
+}
+
+.help > div {
+    text-align:center;
+    opacity:0;
+    position: absolute;
+    top: 24px;
+    right: -4px;
+    min-width: 300px;
+    max-width: 400px;
+    border: none;
+    background-color: #75B9BE;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    padding:0px;
+    color: #FFFFFF;
+    max-height:0px;
+    overflow:hidden;
+    z-index:3;
+    transition:all 0.3s ease-in-out;
+}
+
+.help:hover > div {
+    padding: 6px;
+    opacity: 1;
+    max-height: 1000px;
+    border: solid 1px #FFFFFF;
+}

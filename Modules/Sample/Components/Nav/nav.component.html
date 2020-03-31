@@ -1,0 +1,35 @@
+﻿<nav>
+    <div class="container">
+        <a class="navbar-brand" href="~/">
+            <img src="Images/resonate-small.png" />
+            ResonateJS
+        </a>
+        <button class="navbar-toggler" type="button" onclick="{showMenu = !showMenu}">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="{{ 'defaults': 'navbar-collapse', 'collapse': !showMenu }}">
+            <ul class="navbar-nav ml-auto">
+                <li class="{{ 'defaults' : 'nav-item', 'active': @currentView() === 'Welcome' }}">
+                    <a class="nav-link" href="~/" localize="welcome-link"></a>
+                </li>
+                <li class="{{ 'defaults' : 'nav-item', 'active': @currentView() !== 'Welcome' }}">
+                    <a class="nav-link" href="~/demo/tasks" localize="tasks-demo-link"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.resonatejs.org/documentation" target="_blank" localize="documentation-link"></a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" onclick="{showLocales = !showLocales}">
+                            <span localize="language-name"></span>
+                        </a>
+                        <div class="dropdown-menu bg-dark" show="{showLocales}">
+                            <a class="dropdown-item" onclick="{changeLocale('en-gb')}" localize="language-english"></a>
+                            <a class="dropdown-item" onclick="{changeLocale('fr-fr')}" localize="language-french"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

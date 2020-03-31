@@ -1,0 +1,94 @@
+﻿.next-task-section > div > div:nth-child(1) {
+    width:150px;
+    float:left;
+}
+
+.next-task-section > div > div:nth-child(2) {
+    width: calc(100% - 150px);
+    float: left;
+}
+
+tasks-dashboard table {
+    width:100%;
+    table-layout:fixed;
+}
+
+tasks-dashboard table td {
+    font-size:0.80rem;
+    padding:4px 6px 4px 6px;
+    cursor:pointer;
+}
+
+tasks-dashboard table tr > td:nth-child(1) {
+    width: 35px;
+}
+
+tasks-dashboard table tr > td:nth-child(1)::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23D9594C' d='M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.151 17.943l-4.143-4.102-4.117 4.159-1.833-1.833 4.104-4.157-4.162-4.119 1.833-1.833 4.155 4.102 4.106-4.16 1.849 1.849-4.1 4.141 4.157 4.104-1.849 1.849z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+tasks-dashboard table tr > td:nth-child(1):hover::before {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+tasks-dashboard table tr > td:nth-child(2) {
+    width: 130px;
+}
+
+tasks-dashboard table tr > td:nth-child(3) > div {
+    width:calc(100% - 20px);
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+tasks-dashboard table tr > td:nth-child(4) {
+    width:80px;
+}
+
+tasks-dashboard table tr:nth-child(odd) {
+    background-color:#F8F8F8;
+}
+
+tasks-dashboard table tr:hover {
+    background-color: #daeced;
+}
+
+tasks-dashboard ul, tasks-dashboard li {
+    list-style:none;
+    padding:2px 0px 7px 0px;
+    margin:0px;
+    font-size:0.85rem;
+}
+
+tasks-dashboard li label {
+    width: 100%;
+    margin-bottom: 2px;
+    background-color: #F8F8F8;
+    padding: 3px 0px 4px 8px;
+}
+
+tasks-dashboard li span {
+    display:inline-block;
+    padding:3px 0px 1px 15px;
+}
+
+.btn-tasks {
+    background-color: #75B9BE;
+    border-style:none;
+    color:#FFFFFF !important;
+    outline:none !important;
+    box-shadow:none !important;
+    font-size:0.85rem;
+    padding:2px 10px 3px 10px;
+}
+
+.btn-tasks:hover {
+    background-color: #65A9AE;
+}
